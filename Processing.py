@@ -1,7 +1,7 @@
 
 import pymongo
 
-client = pymongo.MongoClient("mongodb+srv://Ies:yolo@noticias.vltnv.mongodb.net/pln?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://Ies:<pass>@noticias.vltnv.mongodb.net/pln?retryWrites=true&w=majority")
 mydb = client["pln"]
 mycol = mydb["news"]
 item_details = mycol.find()
